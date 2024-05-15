@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="margin: 0% 20% 20%" >
+    <p
+      style="font-size: larger"
+      onmouseover="this.style.color = 'red'"
+      onmouseout="this.style.color = 'black'"
+    >
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae velit
+      animi nesciunt praesentium maxime ea magnam alias fugiat, tenetur, maiores
+      consectetur repudiandae atque omnis pariatur dolorum laboriosam facere
+      ratione culpa? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Repellendus commodi quia similique, maxime ipsa iste nobis itaque! In,
+      corporis magnam. Voluptate blanditiis consectetur iste sequi hic sunt
+      illum tempora explicabo.
+      <br />
+      <hr />
+    </p>
+
+    <p onclick="alert('Clicked on this paragraph')" style="cursor: pointer;">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis
+        perspiciatis dolor minima nam eum porro non, deleniti placeat recusandae
+        aliquam saepe quam veritatis, vero tenetur, at cum voluptatem ad tempora!
+    </p>
+        <br><br><hr>
+
+        <h1>New Section</h1>
+        <a href="javascript:void(0)" onclick="alert('tag Clicked')">Click Me</a>
+        <br><br><hr>
+
+        <h1 id="heading" onmouseover="this.style.color = 'red'" style="cursor: pointer;">This is a heading</h1>
+        <button onclick="document.getElementById('heading').style.color = 'black'">Reset the color of heading</button>
+        <br><br><hr>
+
+        <img src="./mango.webp" onmouseover="src='./apple.jpg'" onmouseout="src='./mango.webp'">
+        <br><br><hr>
+        Email: <input type="email" size="30" onfocus="this.style.backgroundColor='yellow'"
+        onblur="this.style.backgroundColor='white'">
+        <br><br><br><hr>
+
+
+        <h1>Chapter 49</h1>
+        <h2>Reading Field Value</h2>
+        <div id="button">
+            <form onsubmit="checkAddress()">
+                Email:
+                <input type="text" id="email-field">
+                <input type="submit" value="submit">
+            </form>
+        </div>
+            <h2>output:</h2>
+            <div id="result"
+            style="border: 1px solid; min-height: 90px; display: flex; justify-content: center; align-items: center;">
+
+            </div>
+            <script>
+                function checkAddress(){
+                    // event.defaultPrevented()
+                    event.preventDefault()
+                    var email = document.getElementById('email-field').value
+                    if(!email){
+                        alert("Email Address Required")
+                    }
+                    else{
+                        result.innerHTML = email
+                    }
+                }
+            </script>
+            <br><br><br><hr>
+            
+            <h1>Chapter 50</h1>
+            <h2>Setting field value</h2>
+            <p>Enter values eg 38000,40000,42000 and after entering values click on city Field</p>
+            <div id="button">
+                <form>
+                    ZIP:<br>
+                    <input type="text" id="zip" onblur="fillCity()"><br>
+                    City:<br>
+                    <input type="text" id="city">
+                </form>
+            </div>
+            <script>
+                function fillCity(){
+                    var cityName
+                    var zipEntered = document.getElementById("zip").value
+
+                    switch(zipEntered) {
+                        case "38000":
+                            cityName = "Faisalabad"
+                            break
+                        case "40000":
+                            cityName = "Lahore"
+                            break
+                        case "42000":
+                            cityName = "Karachi"
+                            break
+                        default: cityName = ""
+                    }
+
+                    document.getElementById("city").value = cityName
+                }
+            </script>
+  </body>
+</html>

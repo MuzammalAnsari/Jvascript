@@ -1,0 +1,69 @@
+#text {
+    border: 5px;
+}
+.nav-input{
+    height: 30px;
+}
+
+.nav-btn{
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+.nav {
+    height: 50px;
+}
+
+.nav div p{
+height: 30px;
+}
+#btns {
+    border: 1px;
+
+}
+
+.btn3{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#emp {
+    min-height: 40px;
+}
+
+#emp1 {
+    min-height: 40px;
+}
+
+.bottom-border{
+    display: flex;
+    justify-content: center;
+}
+#ClearStatement {
+    background-color: white;
+}
+
+#ClearOutput {
+    background-color: white;
+}
+
+#bgc {
+    background-color: rgb(9, 9, 129);
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+
+.footer{
+    height: 27px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 96vh;
+}
+
+main {
+    flex: 1 0 auto;
+}

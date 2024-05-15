@@ -1,0 +1,58 @@
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1 0 auto;
+}
+#btn-clear{
+    padding:0px 20px ;
+}
+#box1{
+    min-height: 100px;
+    /* border: 1px; */
+    /* width: 70px; */
+    /* min-height: 30px; */
+}
+
+.OrignalString{
+    min-height: 80px;
+    background-color: rgb(34, 34, 184);
+    color: white;
+    /* padding: 10px 30px 0px 30px; */
+    letter-spacing: 2px;
+    /* line-height: 88px; */
+    width: 100%;
+    justify-content: center;
+    padding: 0 auto;
+}
+.Buttons{
+    min-height: 150px;
+
+}
+
+.btnss{
+    width: 250px;
+    margin: 5px;
+    margin-bottom: 4px;
+    color: white;
+    /* background-color: rgb(175, 10, 10); */
+}
+#ClearStatement{
+    background-color: yellowgreen;
+}
+.Output{
+    min-height: 250px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+#OrignalString{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

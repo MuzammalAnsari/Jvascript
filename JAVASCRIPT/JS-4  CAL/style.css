@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(85, 83, 83);
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* flex: 1 0 auto; */
+}
+
+.Herosection {
+    max-width: 100px;
+    min-width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#dataField{
+    display: flex wrap;
+    font-size: 30px;
+    overflow: scroll;
+    /* justify-content: center; */
+    padding-left: 20px;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    border: 1px solid;
+    border-radius: 10px;
+    min-height: 150px;
+}
+
+.btns{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+button:hover{
+    background-color: rgb(33, 209, 86);
+    font-size: 20px;
+}
+
+#tl-btn{
+    color: white;
+    background-color: red;
+    border-radius: 10px 0px 0px 0px;
+}
+#tr-btn{
+    color: white;
+    border-radius: 0px 10px 0px 0px;
+}
+   
+#br-btn{
+    border-radius: 0px 0px 0px 10px;
+
+}
+#bl-btn{
+    border-radius: 0px 0px 10px 0px;
+
+}
+
+button{
+    color: white;
+    background-color: black;
+    border: 1px solid rgb(209, 245, 4);
+
+}
+
+@media screen and (max-width:400) {
+    button{
+        height: 60px;
+    }
+    .Herosection {
+        max-width: 230px;
+        min-width: 230px;
+        height: 200px;
+    }
+}
